@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Site Navigation | Navbar</title>
+        <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/demo.css">
+        <style>
+            /*
+                When fixing navbars at the top, make sure to give a padding-top/margin-top on body.
+                Since navbars are by default 3.5rem in height, a value greater than that is necessary
+            */
+            body {
+                margin-top: 4rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- use .navbar-light, .navbar-dark and combine with .bg-{theme} -->
+        <!-- use .fixed-top and .fixed-bottom to fix to top/bottom -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <!-- Branding goes in here (usually company name and/or logo). You can move this to after the toggler to get it aligned right -->
+                <div class="navbar-brand">
+                    ABC Consulting
+                </div>
+                <!--
+                    Toggle button is given .navbar-toggler with data-toggle="collapse" and data-target="[main menu css selector]"
+                -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#main-menu">
+                    <!--
+                        The toggle button is usually indicated by the "Menu" keyword or the Hamburger icon (3 parallel horizontal lines)
+                    -->
+                    Menu
+                    <!--
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    -->
+                </button>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a href="#" class="nav-link">About us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Clients</a></li>
+                        <!-- 
+                            Submenu can be created using these classes and attributes
+                            Classes: .dropdown, .dropdown-toggle, .dropdown-menu, .dropdown-item
+                            Attributes: data-toggle, href (equivalent to data-target in case of anchor tag)
+                            Divider lines given using .dropdown-divider
+                        -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                Portfolio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!--
+                                    Multi-level sub menus are not supported natively in Bootstrap.
+                                -->
+                                <li class="dropdown-item"><a href="consultancy.html">Development</a></li>
+                                <li class="dropdown-item"><a href="consultancy.html">Consultancy</a></li>
+                                <li class="dropdown-item"><a href="training.html">Training</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li class="dropdown-item"><a href="miscellaneous.html">Miscellaneous</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#">Contact us</a></li>
+                    </ul>
+                    <!-- 
+                        Multiple navs can exist. Float one to the right using .ml-auto
+                    -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <h1>Site Navigation - Navbar</h1>
+            <hr />
+
+            <p class="demo-bite-sized">
+                <strong>Demo A</strong> : Navbar is used to provide the primary site navigation menu.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum corrupti quibusdam, optio illo dolores consectetur vel iste officia odio, possimus voluptatem dolor? Dolor, sunt provident consectetur laudantium quis modi laborum.</p>
+            <p>Velit adipisci id dignissimos asperiores vero nulla veritatis esse modi, accusamus sequi beatae reiciendis ipsum corrupti aut optio molestias a tempore sint temporibus quos, quae voluptates debitis? Nulla, unde excepturi.</p>
+            <p>Pariatur eum deleniti natus praesentium nostrum mollitia corrupti debitis, tempore iusto explicabo consequatur a officia, dignissimos totam, alias ea placeat. Rem nesciunt inventore, deserunt magni necessitatibus maiores quis itaque esse.</p>
+            <p>Odit, veniam expedita sed velit officia vel. Ab at vitae debitis, error blanditiis nesciunt esse, minus, nisi molestias non optio placeat dolorum excepturi autem accusantium consequuntur! Esse nostrum perspiciatis provident?</p>
+            <p>Voluptas animi et corporis voluptatibus repellat veritatis. Voluptatibus laudantium numquam dolores aspernatur quos exercitationem soluta nesciunt ut quo, sapiente impedit! Rerum, inventore labore mollitia deleniti quasi hic natus doloremque repellat.</p>
+            <p>Incidunt illo dicta eveniet itaque ipsa tempora deleniti adipisci aspernatur libero, voluptatum, alias nemo quia id, odio nulla provident quis hic iusto similique. Reiciendis, repudiandae saepe. Accusantium esse facilis provident!</p>
+            <p>At saepe quis accusamus, temporibus cum, sint et ut qui iure dolores commodi assumenda totam. Iure nemo quam magnam saepe dolorum repellat modi recusandae earum, quod, repudiandae deleniti rem hic.</p>
+            <p>Dolorum voluptatem, quam inventore ex molestias molestiae iusto cupiditate illo rem assumenda, alias laudantium libero eaque quo eos, aspernatur porro quibusdam reiciendis maiores cumque doloribus omnis odit sunt. Sequi, earum.</p>
+            <p>Nulla impedit voluptatem quisquam doloribus incidunt commodi, velit rerum asperiores, dolorum omnis expedita temporibus fuga sed nisi. Optio sit consequatur quidem illum! Nulla non reiciendis vel, fuga accusantium rerum perspiciatis?</p>
+            <p>Magni neque tempora ullam odit recusandae dicta libero quaerat architecto ratione iure eius, officia facilis voluptas nesciunt. Laudantium reiciendis accusamus rerum laborum ullam dicta in molestiae, eveniet cum. Reprehenderit, eligendi.</p>
+            <p>Odit quo debitis est at dolore quod voluptatem! Cumque quas atque dicta fuga veniam voluptates sapiente amet, nemo cum. Magnam labore quasi nihil at vitae ipsum delectus. Officia, vel numquam!</p>
+            <p>Fugit rerum maxime a officia dolorem possimus eaque. Velit temporibus ipsum optio eius voluptatibus ducimus impedit atque! Sed obcaecati, numquam, consequatur voluptas assumenda eligendi tempora tenetur quia excepturi harum nobis?</p>
+            <p>Commodi perferendis tempora provident eos, a aperiam quaerat quae id vitae reiciendis officia quas blanditiis eum vero eius harum? Odio molestiae iusto delectus quibusdam veritatis asperiores debitis tempora, eveniet voluptas.</p>
+            <p>At ipsam odio libero labore ea perspiciatis magni mollitia similique enim illo, deleniti quisquam eaque commodi laboriosam dignissimos pariatur optio, repellat quam voluptatum omnis obcaecati sapiente. Ut, eligendi! Dolore, quod!</p>
+            <p>Ipsa cum veritatis provident quam suscipit explicabo est mollitia, voluptates harum amet repudiandae temporibus debitis tempore at adipisci assumenda perspiciatis, eaque velit. Doloribus aspernatur eaque at culpa commodi. Assumenda, similique.</p>
+            <p>Magni, quibusdam sapiente rem eveniet velit iusto aliquid assumenda dignissimos. Officia a eligendi corrupti ipsum veniam laboriosam explicabo esse consequuntur praesentium exercitationem distinctio ea est, molestiae omnis eius voluptas ut.</p>
+            <p>Dolorum amet quod voluptatum placeat? Veritatis autem esse blanditiis aperiam facere atque quis, adipisci ab asperiores voluptatum similique obcaecati sapiente perspiciatis exercitationem eveniet soluta eos eaque quisquam unde nostrum vero!</p>
+            <p>Obcaecati laborum, est dolorem eligendi, consequatur adipisci numquam illum officiis minima non eos. Repudiandae voluptate placeat laboriosam sapiente ducimus enim quidem. In hic quas amet laborum dolores placeat eaque harum?</p>
+            <p>Minima maxime aliquam rem mollitia quibusdam eligendi? Dolor aperiam omnis impedit reiciendis cupiditate minima aut, beatae, earum repellendus cumque, illo aliquid soluta repellat quam magni voluptate veniam praesentium obcaecati fuga.</p>
+            <p>Consequatur illo quod iure illum voluptates cupiditate praesentium optio, reprehenderit aut reiciendis et ut asperiores iste odio nisi dolor. Sapiente at alias esse reprehenderit repellat quibusdam, natus officia deleniti eos.</p>
+        </div>
+
+        <script src="../../jquery-3.3.1.min.js"></script>
+        <script src="../../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

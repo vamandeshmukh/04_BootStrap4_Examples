@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Utility classes | Display utilities</title>
+        <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/demo.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Display Utility Classes</h1>
+            <hr />
+            
+            <!-- 
+                sr-only is similar to .d-none. The content is meant to be for screen readers only (eg. skip links).
+                The element become visible when it gains focus (via tab key press)
+            -->
+            <a class="sr-only sr-only-focusable" href="#main">Skip to main section</a>
+            <p id="main">
+                A paragraph after the .sr-only para - Note that there is no space maintained above for the .sr-only element. Hit the tab key and see the .sr-only para become visible when it gains focus on tabbing. This is due to the addition of the .sr-only-focusable class.
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Displaying Data | List Groups</title>
+        <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <style>
+            small.highlight {
+                font-weight: bold;
+                background-color: yellow;
+                color: black;
+            }
+
+            .demo-bite-sized {
+                margin: 40px 0 10px 0;
+                font-size: 1.4em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Displaying Data - List Groups</h1>
+            <hr />
+            
+            <p class="demo-bite-sized">
+                Use <small class="highlight">.list-group-item-[theme]</small> within list items for theming them.
+                <br />
+                A badge within .list-group-item can be pushed to the right using <small class="highlight">.d-flex.justify-content-between.align-items-center</small>
+            </p>
+
+            <h4>Recommended Phones</h4>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action list-group-item-warning d-flex justify-content-between align-items-center" href="https://www.amazon.in/Samsung-Galaxy-Midnight-Black-RAM/dp/B06Y3GYZKW/ref=sr_1_2?ie=UTF8&qid=1504712394&sr=8-2&keywords=samsung+galaxy+S8">
+                    <div>
+                        <span class="badge">22 sellers</span>
+                        <h5>
+                            Samsung Galaxy S8 (Hurry! Only 3 pieces left)
+                            <br />
+                            <small>Rs. 57,900</small>
+                        </h5>
+                    </div>
+                    <span class="badge badge-warning badge-pill">3</span>
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-primary d-flex justify-content-between align-items-center" href="https://www.amazon.in/OnePlus-Midnight-Black-128GB-memory/dp/B01MXZW51M/ref=sr_1_2?s=electronics&ie=UTF8&qid=1504712420&sr=1-2&keywords=oneplus+5">
+                    <div>
+                        <span class="badge">Amazon exclusive</span>
+                        <h5>
+                            One Plus 5
+                            <br />
+                            <small>Rs. 37,999</small>
+                        </h5>
+                    </div>
+                    <span class="badge badge-warning badge-pill">15</span>
+                </a>
+                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center disabled">
+                    <div>
+                        <span class="badge">5 sellers</span>
+                        <h5>
+                            Apple iPhone 7 (Out of stock)
+                            <br />
+                            <small>Rs. 53,999</small>
+                        </h5>
+                    </div>
+                    <span class="badge badge-warning badge-pill">0</span>
+                </a>
+            </ul>
+
+            <script src="../../jquery-3.3.1.min.js"></script>
+            <script src="../../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+        </div>
+    </body>
+</html>

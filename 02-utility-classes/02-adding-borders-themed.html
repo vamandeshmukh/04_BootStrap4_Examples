@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Utility classes | Border classes</title>
+        <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/demo.css">
+        <style>
+            span[class^="border"] {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background-color: lightpink;
+                border-width: 5px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Utility Classes - Border classes</h1>
+            <hr />
+
+            <p>
+                <small>.border-{theme}</small>
+                <br />
+            </p>
+            <p>
+                <small>.border-primary</small> <span class="border border-primary"></span>
+                <br />
+                <small>.border-dark</small> <span class="border-top border-dark"></span>
+                <br />
+            </p>
+        </div>
+    </body>
+</html>

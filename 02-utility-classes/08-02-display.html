@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Utility classes | Hiding and Showing Elements</title>
+        <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/demo.css">
+        <style>
+            #hidden-para {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Utility Classes - Hiding and Showing Elements</h1>
+            <hr />
+
+            <p class="demo-bite-sized">
+                <strong>Use .d-{breakpoint}-none to hide above a breakpoint. Force showing using .d-block, .d-inline, d-{breakpoint}-block etc. Use .invisible to preserve space meant for the invisible element.</strong>
+            </p>
+            <p class="d-block" id="hidden-para"> <!-- Force show using .d-block -->
+                <small>.d-block</small>
+                <br />
+                Qui ullamco fugiat velit dolore deserunt nisi. Do incididunt laborum incididunt Lorem. Ea eiusmod commodo culpa dolor mollit. Nisi commodo exercitation reprehenderit dolore eiusmod quis esse cupidatat irure veniam ad duis. Amet velit sunt sunt adipisicing in.
+            </p>
+            <p class="d-md-none">
+                <small>.d-md-none</small>
+                <br />
+                Esse occaecat occaecat cupidatat officia consectetur magna duis aliquip esse. Et nostrud anim velit reprehenderit eiusmod tempor enim dolor minim. Et esse et officia culpa labore enim aliqua excepteur ipsum aliquip commodo aliqua minim. Et occaecat esse consequat Lorem quis nulla irure.
+            </p>
+            <p class="d-md-none d-lg-block">
+                <small>.d-md-none.d-lg-block</small>
+                <br />
+                Esse occaecat occaecat cupidatat officia consectetur magna duis aliquip esse. Et nostrud anim velit reprehenderit eiusmod tempor enim dolor minim. Et esse et officia culpa labore enim aliqua excepteur ipsum aliquip commodo aliqua minim. Et occaecat esse consequat Lorem quis nulla irure.
+            </p>
+            <p class="d-none"> <!-- Force hiding using .d-none -->
+                <small>.d-none</small>
+                <br />
+                Esse occaecat occaecat cupidatat officia consectetur magna duis aliquip esse. Et nostrud anim velit reprehenderit eiusmod tempor enim dolor minim. Et esse et officia culpa labore enim aliqua excepteur ipsum aliquip commodo aliqua minim. Et occaecat esse consequat Lorem quis nulla irure.
+            </p>
+            <p>
+                A paragraph after the .d-none para - Note that there is no space maintained above for the hidden element
+            </p>
+            <p class="invisible"> <!-- Force hiding using .invisible -->
+                <small>.invisible</small>
+                <br />
+                Esse occaecat occaecat cupidatat officia consectetur magna duis aliquip esse. Et nostrud anim velit reprehenderit eiusmod tempor enim dolor minim. Et esse et officia culpa labore enim aliqua excepteur ipsum aliquip commodo aliqua minim. Et occaecat esse consequat Lorem quis nulla irure.
+            </p>
+            <p>
+                A paragraph after the .invisible para - Note that space (above) is maintained for the invisible element
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Utility classes | Border classes</title>
+        <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/demo.css">
+        <style>
+            span[class^="border"] {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background-color: lightpink;
+                border-width: 10px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Utility Classes - Border classes</h1>
+            <hr />
+
+            <p>
+                <small>.rounded and .rounded-*</small>
+                <br />
+                Use .rounded for rounding corners of a particular edge (border-radius). Use .rounded-circle for rounding a particular corner or making it look like a circle.
+            </p>
+            <p>
+                <small>.rounded</small> <span class="border border-primary rounded"></span>
+                <br />
+                <small>.rounded-top</small> <span class="border border-dark rounded-top"></span>
+                <br />
+                <small>.rounded-circle</small> <span class="border rounded-circle"></span>
+                <br />
+            </p>
+        </div>
+    </body>
+</html>

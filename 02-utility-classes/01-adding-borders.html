@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Utility classes | Border classes</title>
+        <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/demo.css">
+        <style>
+            span[class^="border"] {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background-color: lightpink;
+                border-width: 5px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Utility Classes - Border classes</h1>
+            <hr />
+
+            <p>
+                <small>.border-*</small>
+                <br />
+                These set up a gray shade border with 1px width by default. The styles are set using !important - if you need to overridfe those styles, use !important on your styles too. Use border-*-0 to remove border from a particular direction.
+            </p>
+            <p>
+                <small>.border</small> <span class="border"></span>
+                <br />
+                <small>.border-top</small> <span class="border-top"></span>
+                <br />
+                <small>.border-right</small> <span class="border-right"></span>
+                <br />
+                <small>.border-bottom</small> <span class="border-bottom"></span>
+                <br />
+                <small>.border-left</small> <span class="border-left"></span>
+                <br />
+                <small>.border-left</small> <span class="border border-top-0"></span>
+                <br />
+            </p>
+        </div>
+    </body>
+</html>

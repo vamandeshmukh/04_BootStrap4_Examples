@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Forms - Basics</title>
+        <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Forms - Horizontal form</h1>
+            <hr />
+
+            <p>
+                Checkboxes and radio buttons are styled using a separate set of classes. We can get the checkboxes/radio buttons inline using special classes.
+            </p>
+
+            <form>
+                <div class="form-group row">
+                    <label for="email" class="col-form-label col-md-3">Email</label>
+                    <div class="col-md-9">
+                        <input type="email" id="email" name="email" class="form-control" value="john.doe@example.com" readonly />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="username" class="col-form-label col-md-3">Username</label>
+                    <div class="col-md-9">
+                        <input type="text" id="username" name="username" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="password" class="col-form-label col-md-3">Password</label>
+                    <div class="col-md-9">
+                        <input type="password" id="password" name="password" class="form-control" />
+                        <small class="form-text text-muted">
+                            Password must be at least 8 characters long
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="member-type" class="col-form-label col-md-3">Member Type</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control-plaintext" value="Premium" readonly />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-md-3 pt-0">Interests</legend>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="interests" id="interests-01" value="web development" checked>
+                                <label class="form-check-label" for="interests-01">
+                                    Web development
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="interests" id="interests-02" value="machine learning" checked>
+                                <label class="form-check-label" for="interests-02">
+                                    Machine Learning
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="interests" id="interests-03" value="data science" checked>
+                                <label class="form-check-label" for="interests-03">
+                                    Data Science
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-md-3 col-md-9">
+                        <input type="submit" value="Submit" class="btn btn-outline-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Displaying Data | Tables</title>
+        <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/demo.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Displaying Data - Tables</h1>
+            <hr />
+
+            <p class="demo-bite-sized">
+                <strong>Demo A</strong> : <small>.table</small> to table (base class), <small>.table-striped</small> for zebra-striping, <small>.table-bordered</small> for borders on table, <small>.table-hover</small> for hover highlighting on rows.
+                <br /><br />
+                Add <small>.active</small> or <small>.[theme]</small> class on tr/td. 
+                <br /><br />
+                Add <small>.table-responsive</small> to get horizontally scrollable responsive table on small screens and lower.
+            </p>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Name</th>
+                            <th>Email id</th>
+                            <th>Phone number</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>john@example.com</td>
+                            <td>9876543210</td>
+                            <td>Dolore anim ullamco do nulla amet nulla sunt consectetur id duis.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mary</td>
+                            <td>mary@example.com</td>
+                            <td>9876543211</td>
+                            <td>Aute ex ullamco anim occaecat non.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ravi</td>
+                            <td>ravi@example.com</td>
+                            <td>9876543212</td>
+                            <td>Anim dolore amet proident culpa labore aute anim culpa adipisicing est occaecat sit consequat dolor.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Geeta</td>
+                            <td>geeta@example.com</td>
+                            <td>9876543213</td>
+                            <td>Dolore proident occaecat reprehenderit deserunt pariatur ad consequat nostrud aliquip.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="danger">Barry</td>
+                            <td>barry@example.com</td>
+                            <td>9876543214</td>
+                            <td>Qui mollit mollit laborum ut enim sit elit fugiat minim do tempor consequat ullamco esse.</td>
+                        </tr>
+                        <tr class="active">
+                            <td>6</td>
+                            <td>Carla</td>
+                            <td>carla@example.com</td>
+                            <td>9876543215</td>
+                            <td>Esse ex adipisicing ullamco do mollit veniam.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <p class="demo-bite-sized">
+                <strong>Demo B</strong> : <small>.table-{theme}</small> on table/row/cell to have a themed table/row/cell. Use <small>.thead-{theme}</small> on the thead to have a themed table heading row.
+            </p>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover table-info">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Name</th>
+                            <th>Email id</th>
+                            <th>Phone number</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>john@example.com</td>
+                            <td>9876543210</td>
+                            <td>Dolore anim ullamco do nulla amet nulla sunt consectetur id duis.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mary</td>
+                            <td>mary@example.com</td>
+                            <td>9876543211</td>
+                            <td>Aute ex ullamco anim occaecat non.</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>3</td>
+                            <td>Ravi</td>
+                            <td>ravi@example.com</td>
+                            <td>9876543212</td>
+                            <td>Anim dolore amet proident culpa labore aute anim culpa adipisicing est occaecat sit consequat dolor.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Geeta</td>
+                            <td>geeta@example.com</td>
+                            <td>9876543213</td>
+                            <td>Dolore proident occaecat reprehenderit deserunt pariatur ad consequat nostrud aliquip.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="table-warning">Barry</td>
+                            <td>barry@example.com</td>
+                            <td>9876543214</td>
+                            <td>Qui mollit mollit laborum ut enim sit elit fugiat minim do tempor consequat ullamco esse.</td>
+                        </tr>
+                        <tr class="table-active">
+                            <td>6</td>
+                            <td>Carla</td>
+                            <td>carla@example.com</td>
+                            <td>9876543215</td>
+                            <td>Esse ex adipisicing ullamco do mollit veniam.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="demo-bite-sized">
+                <strong>Demo C</strong> : <small>.table-sm</small> to have reduced padding for every table cell. This makes for a more compact table.
+            </p>
+
+            <div class="table-responsive">
+                <table class="table table-sm table-bordered table-striped table-hover table-info">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Name</th>
+                            <th>Email id</th>
+                            <th>Phone number</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>john@example.com</td>
+                            <td>9876543210</td>
+                            <td>Dolore anim ullamco do nulla amet nulla sunt consectetur id duis.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mary</td>
+                            <td>mary@example.com</td>
+                            <td>9876543211</td>
+                            <td>Aute ex ullamco anim occaecat non.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ravi</td>
+                            <td>ravi@example.com</td>
+                            <td>9876543212</td>
+                            <td>Anim dolore amet proident culpa labore aute anim culpa adipisicing est occaecat sit consequat dolor.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Geeta</td>
+                            <td>geeta@example.com</td>
+                            <td>9876543213</td>
+                            <td>Dolore proident occaecat reprehenderit deserunt pariatur ad consequat nostrud aliquip.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="danger">Barry</td>
+                            <td>barry@example.com</td>
+                            <td>9876543214</td>
+                            <td>Qui mollit mollit laborum ut enim sit elit fugiat minim do tempor consequat ullamco esse.</td>
+                        </tr>
+                        <tr class="active">
+                            <td>6</td>
+                            <td>Carla</td>
+                            <td>carla@example.com</td>
+                            <td>9876543215</td>
+                            <td>Esse ex adipisicing ullamco do mollit veniam.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <script src="../../jquery-3.3.1.min.js"></script>
+            <script src="../../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+        </div>
+    </body>
+</html>
