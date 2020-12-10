@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- reference : https://stackoverflow.com/questions/25121144/alternating-row-colors-in-bootstrap-3-no-table -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid System | Rows and columns</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .row.colored [class^="col-"] {
+            color: white;
+            text-align: center;
+        }
+
+        .row.colored [class^="col-"]:nth-child(odd) {
+            background: blue;
+        }
+        .row.colored [class^="col-"]:nth-child(even) {
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rows and columns</h1>
+        <hr/>
+        <p><strong>Logical columns are grouped into actual columns using .col-* classes.
+                Here we split as 4 + 8.</strong>
+        </p>
+        <div class="row colored">
+            <div class="col-sm-4">
+                <p>
+                    Col 1 - 4 merged
+                    <br />
+                    <small>.col-sm-4</small>
+                </p>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                    Col 5 - 12 merged
+                    <br />
+                    <small>.col-sm-8</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
